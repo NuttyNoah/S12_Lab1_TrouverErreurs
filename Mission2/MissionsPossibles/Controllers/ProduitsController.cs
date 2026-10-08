@@ -24,7 +24,31 @@ namespace Mission.Controllers
         public async Task<IActionResult> Index()
         {
             // COMPLÉTER ICI
-            return View();
+            //var categories = _context.Categories;
+            //List<Produit> l= new List<Produit>();
+
+            //foreach (var c in categories) {
+
+            //    foreach(var p in c.Produits)
+            //    {
+            //        bool pareil = false;
+            //        foreach(Produit  produit in l)
+            //        {
+            //            if (p == produit)
+            //            {
+            //                pareil = true;
+            //            }
+            //        }
+            //        if (pareil == false)
+            //        {
+            //            l.Add(p);
+            //        }
+            //    }
+            //}
+
+
+            //return View(l);
+            return View(_context.Produits);
         }
 
     }
